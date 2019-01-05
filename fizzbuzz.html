@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="fizzbuzz">
+
+</ul>
+<script>
+    let fblist=document.getElementById('fizzbuzz');
+    let starttime=new Date().getTime();
+    let listdata="";
+    for(let i=1; i<1000; i++){
+        let item="";
+        if(i%3 == 0) item+="fizz";
+        if(i%5 == 0) item+="buzz";
+        if(item == "") item+=i;
+        listdata+= "<li>"+ item + "</li>"
+    }
+    fblist.innerHTML=listdata;
+    let endtime=new Date().getTime();
+    console.log(endtime-starttime);
+
+</script>
+</body>
+</html>

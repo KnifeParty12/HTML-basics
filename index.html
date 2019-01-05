@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Alabama!!</title>
+
+    <style>
+        *{
+            font-family: Arial;
+            font-size: 18pt;
+        }
+    </style>
+
+
+</head>
+<body>
+<input id="todo"><button id="btn">ADD</button>
+<br>
+<p id="para">Hello</p>
+<br>
+<ul id="list">
+    <li>Task One</li>
+</ul>
+
+<script>
+let todobox = document.getElementById('todo');
+let addbtn = document.getElementById('btn');
+let todolist=document.getElementById('list');
+    addbtn.onclick = function () {
+    let todo=todobox.value;
+
+    let newtasklistitem=document.createElement('li');
+    newtasklistitem.innerText=todo;
+    todolist.appendChild(newtasklistitem);
+}
+</script>
+
+</body>
+</html>
