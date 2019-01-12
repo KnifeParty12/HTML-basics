@@ -1,0 +1,24 @@
+* {
+    color: orangered;
+}
+
+ div {
+     margin-left: 30px; //shifts div by 30 pixels
+ }
+
+ p{
+     font-size:30px ; //changes font-size of both p-tags by 30 pixels
+ }
+ #p2 {
+     font-family: "Bauhaus 93";
+ }
+ #p3{
+     margin-left: 20px;
+ }
+
+ .osmpara{
+     background-color: lightseagreen;
+ }
+ .bigpara{
+     font-size: 50px;//all elements with this class will undergo the following changes
+ }
